@@ -1,0 +1,22 @@
+{
+  "name": "fullweb",
+  "version": "1.0.0",
+  "description": "Finally a website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/billtang98/fullweb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/billtang98/fullweb/issues"
+  },
+  "homepage": "https://github.com/billtang98/fullweb#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
