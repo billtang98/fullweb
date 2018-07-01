@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <title>Home</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00a300">
+    <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/bootstrap.css">
+    <link rel="stylesheet" href="/custom.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+
+<body style="background: url('/background.JPG') no-repeat center center fixed; background-size:cover;">
+    <!-- <video class="media" autoplay="true" loop>
+                <source  src="/assets/backgroundVideo.mp4" srcset="/assets/background.jpg 1000w" type="video/mp4">
+    </video> -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light betterBackground ">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="font-family: 'Open Sans', sans-serif;">Yuwei Tang</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="font-family: 'Open Sans', sans-serif;">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="font-family: 'Open Sans', sans-serif;">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="font-family: 'Open Sans', sans-serif;">Work Experences</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    
+    <div class="container navMarginTop">
+        <div>
+            <h1 class="display-3" style="color:white;">I Wanna Be an Engineer</h1>
+            <h1 class="display-3" style="color:white;"><span id="UofT" onmouseover="UofTExpand()" onmouseout="UofTBack()">UofT</span></h1>
+            <div class="row">
+                <div class="text-right" style="width:125px;">
+                    <h1 class="display-3" style="color:white;"><span id="textSwap" <!--onmouseover="ECEExpand()" onmouseout="ECEBack() -->"></span></h1>
+                </div>
+                <div style="padding:0;">
+                    <h1 class="display-3" style="color:white;">2T0+<span id="T1"><!--onmouseover="T1Expand()" onmouseout="T1Back()"-->T1</span>+<span id="PEY"><!--onmouseover="PEYExpand()" onmouseout="PEYBack()"-->PEY</span></h1>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron" style="background:transparent;">
+            <h1 class="text-center display-4" id="MyClockDisplay" style="color:white;"></h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-sm-12">
+                <a class="btn btn-primary btn-lg btn-block" href="#" role="button">Skills</a>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <a class="btn btn-primary btn-lg btn-block" href="#" role="button">Projects</a>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <a class="btn btn-primary btn-lg btn-block" href="#" role="button">Work Experiences</a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar fixed-bottom navbar-expand-lg navbar-light betterBackground ">
+        <div class="container">
+            <h5 class="whiteh3" style="font-family: 'Open Sans', sans-serif;">Copyright &copy; 2017-2018 Yuwei Tang</h5>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.facebook.com/bill.tang.58"><i class="fab fa-facebook-square fa-lg"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/yuweitang98"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mailto:yuwei.tang@mail.utoronto.ca"><i class="fas fa-envelope fa-lg"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <script type="text/javascript">
+            function showTime() {
+                var date = new Date();
+                var h = date.getHours();
+                var m = date.getMinutes();
+                var s = date.getSeconds();
+                var amOrPm = "PM";
+                if (h < 12) {
+                    amOrPm = "AM";
+                }
+                if (h == 0) {
+                    h = 12;
+                }
+                if (h > 12) {
+                    h = h - 12;
+                }
+                h = (h < 10) ? "0" + h : h;
+                m = (m < 10) ? "0" + m : m;
+                s = (s < 10) ? "0" + s : s;
+
+                var time = h + ":" + m + ":" + s + " " + amOrPm;
+                document.getElementById("MyClockDisplay").innerText = time;
+                document.getElementById("MyClockDisplay").textContent = time;
+                setTimeout(showTime, 1000);
+            }
+            function test() {
+                var name = "ECE";
+                var num = 0;
+                var speed = 50;
+                textSwap();
+                function textSwap() {
+                    if (num < 32) {
+                        if (name == "ECE") {
+                            name = "CIV";
+                        }
+                        else if (name == "CIV") {
+                            name = "MSE";
+                        }
+                        else if (name == "MSE") {
+                            name = "MIE";
+                        }
+                        else if (name == "MIE") {
+                            name = "ECE";
+                        }
+                        document.getElementById("textSwap").innerText = name;
+                        document.getElementById("textSwap").textContent = name;
+                        num++;
+                        speed = speed + 5;
+                        setTimeout(textSwap, speed);
+                    }
+                }
+            }
+            function UofTExpand() {
+                document.getElementById("UofT").innerText = "University of Toronto ";
+                document.getElementById("UofT").textContent = "University of Toronto ";
+            }
+            function UofTBack() {
+                document.getElementById("UofT").innerText = "UofT ";
+                document.getElementById("UofT").textContent = "UofT ";
+            }
+            function ECEExpand() {
+                document.getElementById("textSwap").innerText = "Electrical and Computer Engineering ";
+                document.getElementById("textSwap").textContent = "Electrical and Computer Engineering ";
+            }
+            function ECEBack() {
+                document.getElementById("textSwap").innerText = "ECE";
+                document.getElementById("textSwap").textContent = "ECE";
+            }
+            function T1Expand() {
+                document.getElementById("T1").innerText = "TrackOne";
+                document.getElementById("T1").textContent = "TrackOne";
+            }
+            function T1Back() {
+                document.getElementById("T1").innerText = "T1";
+                document.getElementById("T1").textContent = "T1";
+            }
+            function PEYExpand() {
+                document.getElementById("PEY").innerText = "Professional Experience Year";
+                document.getElementById("PEY").textContent = "Professional Experience Year";
+            }
+            function PEYBack() {
+                document.getElementById("PEY").innerText = "PEY";
+                document.getElementById("PEY").textContent = "PEY";
+            }
+            showTime();
+            test();
+        </script>
+        <script src="/jquery.min.js"></script>
+        <script src="/popper.min.js"></script>
+        <script src="/bootstrap.min.js"></script>
+</body>
+</html>
