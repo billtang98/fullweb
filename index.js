@@ -39,7 +39,8 @@ website.listen(5000, function () {
 
 function visitedPage(data) {
     data = data + "\n";
-    fs.appendFileSync('assets/visited.txt', data);
+    //fs.appendFileSync('assets/visited.txt', data);
+    fs.appendFileSync('~/data/visited.txt', data);
 }
 
 function outputTime() {
@@ -121,7 +122,8 @@ function startingServer() {
     h = (h < 10) ? "0" + h : h;
     m = (m < 10) ? "0" + m : m;
     s = (s < 10) ? "0" + s : s;
-
+    var message = "The server started";
     var time = month + " " + date + " " + h + ":" + m + ":" + s + " " + amOrPm;
+    visitedPage(message);
     visitedPage(time);
 }
