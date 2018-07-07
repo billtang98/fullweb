@@ -39,8 +39,7 @@ website.listen(5000, function () {
 
 function visitedPage(data) {
     data = data + "\n";
-    //fs.appendFileSync('assets/visited.txt', data);
-    fs.appendFileSync('~/data/visited.txt', data);
+    fs.appendFileSync('../data/visited.txt', data);
 }
 
 function outputTime() {
