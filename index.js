@@ -1,6 +1,7 @@
 var express = require("express");
 var website = express();
 var fs = require('fs');
+var moment = require('moment');
 
 startingServer();
 outputTime();
@@ -66,7 +67,7 @@ function outputTime() {
 }
 
 function startingServer() {
-    var initialDate = new Date();
+    /*var initialDate = new Date();
     var date = initialDate.getDate();
     var month = initialDate.getMonth();
     var h = initialDate.getHours();
@@ -122,7 +123,10 @@ function startingServer() {
     m = (m < 10) ? "0" + m : m;
     s = (s < 10) ? "0" + s : s;
     var message = "The server started";
-    var time = month + " " + date + " " + h + ":" + m + ":" + s + " " + amOrPm;
+    var time = month + " " + date + " " + h + ":" + m + ":" + s + " " + amOrPm; */
+    moment.locale('en-ca');
+    test = moment().format('LLL');
+    console.log(test);
     visitedPage(message);
     visitedPage(time);
 }
