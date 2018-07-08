@@ -124,9 +124,9 @@ function startingServer() {
     s = (s < 10) ? "0" + s : s;
     var message = "The server started";
     var time = month + " " + date + " " + h + ":" + m + ":" + s + " " + amOrPm; */
+    var message = "The server started";
     moment.locale('en-ca');
-    test = moment().format('LLL');
-    console.log(test);
+    time = moment().format('LLLL');
     visitedPage(message);
     visitedPage(time);
 }
